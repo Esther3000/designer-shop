@@ -92,6 +92,7 @@ app.post("/login", (request, response) => {
           // return success response
           response.status(200).send({
             message: "Login Successful",
+            username: user.username,
             email: user.email,
             token,
           });
