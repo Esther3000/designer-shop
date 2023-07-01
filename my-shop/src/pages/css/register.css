@@ -1,0 +1,92 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    overflow: scroll;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i0.wp.com/www.nationalturk.com/en/wp-content/uploads/2022/05/netflix-codes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur() brightness(0.4);
+    z-index: -1;
+  }
+  .netflix-logo {
+    padding-left: 5vh;
+  }
+  .input-box {
+    background-color: rgba(221, 218, 218, 0.9);
+    width: 25vw;
+    border-radius : 7px;
+    
+  }
+  .submit-button {
+    width: 25vw;
+    height: 7vh;
+    color: #fff;
+    background-color: #E50914FF;
+    border-radius : 7px;
+  }
+ 
+  .form {
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center; /* Horizontally center the components */
+    align-items: center;
+    
+    
+  }
+  .extra-statements {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 10vh; 
+    margin-top: 2vh;
+    justify-content: center; 
+    align-items: center;
+    color: rgb(133, 127, 127);
+    
+  
+  }
+  /*loading content*/
+
+  .loader {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    animation: rotation 0.75s linear infinite;
+    border-radius: 100em;
+  }
+  
+  .path {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 20;
+    stroke-linecap: round;
+  }
+  
+  @keyframes rotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

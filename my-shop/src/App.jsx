@@ -1,29 +1,27 @@
 import './App.css';
+import { React, useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import Navbar from './pages/navbar';
 import Search from './pages/search';
-import React from 'react';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Container from '@mui/material/Container';
 
 
 function App() {
- 
+  
 
   return (
     <>
-    <Box sx={{ flexGrow: 1 }}>
-        <Toolbar>
-          <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-            <a href='/'>Discount Hub</a>
-          </Typography>
-            <Button color="inherit"><a href='login'>Login</a></Button>
-            <Button color="inherit"><a href='cart'><ShoppingCartIcon /></a></Button>
-            <Button color="inherit">Logout</Button>
-        </Toolbar>
-    </Box>
-    <Search />
+    
+    <Navbar />
+    
+    <LandingPage />
+    <div class="search-container">
+   <Container>
+   <Search />
+   </Container>
+   </div>
+  
     </>
   )
 }

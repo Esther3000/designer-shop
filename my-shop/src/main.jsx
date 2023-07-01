@@ -6,11 +6,12 @@ import {
 } from "react-router-dom";
 import ErrorPage from "./error-page";
 import App from './App.jsx';
-import Cart from './pages/cart';
+import LandingPage from './pages/LandingPage';
 import Search from './pages/search';
 import Login from './pages/login';
 import './index.css'
 import Register from './pages/register';
+
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,8 @@ const router = createBrowserRouter([
     element: <Search />,
   },
   {
-    path: "cart",
-    element: <Cart />
+    path: "landingPage",
+    element: <LandingPage />
   },
   {
     path: "login",
@@ -33,7 +34,8 @@ const router = createBrowserRouter([
   {
     path: "register",
     element: <Register />
-  }
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

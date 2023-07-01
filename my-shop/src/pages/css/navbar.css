@@ -1,0 +1,9 @@
+.netflix-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+Button:hover {
+    opacity: 0.5;
+}
+
